@@ -1,13 +1,9 @@
 package company;
 
-public class DBA implements Employees{
-
-    String name;
-    double wage;
+public class DBA extends EmployeesInfos implements Employees{
 
     public DBA (String name, double wage) {
-        this.name = name;
-        this.wage = wage;
+        super(name, wage);
     }
 
     public double getWage() {

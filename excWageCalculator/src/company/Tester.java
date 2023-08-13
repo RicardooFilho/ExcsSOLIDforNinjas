@@ -1,13 +1,9 @@
 package company;
 
-public class Tester implements Employees {
-
-    String name;
-    double wage;
+public class Tester extends EmployeesInfos implements Employees {
 
     public Tester (String name, double wage) {
-        this.name = name;
-        this.wage = wage;
+        super(name, wage);
     }
 
     public double getWage() {

@@ -1,13 +1,9 @@
 package company;
 
-public class Developer implements Employees {
-
-    String name;
-    double wage;
+public class Developer extends EmployeesInfos implements Employees {
 
     public Developer (String name, double wage) {
-        this.name = name;
-        this.wage = wage;
+        super(name, wage);
     }
 
     public double getWage() {
